@@ -1,0 +1,9 @@
+.vagrant/
+output/
+packer_cache/
+build/
+node_modules/
+.DS_Store
+virtio-win.iso
+virtio-win-*.iso
+windows.iso
