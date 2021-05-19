@@ -1,4 +1,7 @@
 {
   "badge_style": "flat",
-  "slug": "debian-desktop"
+  "description_template": "Debian Desktop MAJOR_VERSION.MINOR_VERSION",
+  "hostname": "vagrant-debian",
+  "slug": "debian-desktop",
+  "vagrant_tag": "debian"
 }
