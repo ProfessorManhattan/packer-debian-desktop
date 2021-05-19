@@ -1,9 +1,9 @@
 {
   "name": "@megabytelabs/packer-debian-desktop",
+  "version": "1.0.0",
   "description": "Node files that aid in development of Packer projects",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
-  "version": "1.0.0",
   "scripts": {
     "build": "packer build template.json",
     "build:kvm": "packer build -only=qemu template.json",
