@@ -64,7 +64,7 @@
   </p>
 </div>
 
-> </br><h3 align="center">**An automated Debian Desktop (version 10.9) Packer project that builds boxes using the latest Debian Server release**</h3></br>
+> </br><h3 align="center">**An automated Debian Desktop (currently, version 10.9) Packer project that builds boxes using the latest Debian Server release**</h3></br>
 
 <!--TERMINALIZER![terminalizer_title](https://gitlab.com/megabyte-labs/ansible-roles/role_name/-/raw/master/.demo.gif)TERMINALIZER-->
 

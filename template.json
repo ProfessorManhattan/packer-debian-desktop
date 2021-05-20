@@ -1,6 +1,6 @@
 {
   "variables": {
-    "boot_command": "<esc><wait>install <wait> preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg <wait>debian-installer=en_US.UTF-8 <wait>auto <wait>locale=en_US.UTF-8 <wait>kbd-chooser/method=us <wait>keyboard-configuration/xkb-keymap=us <wait>netcfg/get_hostname={{ .Name }} <wait>netcfg/get_domain=vagrantup.com <wait>fb=false <wait>debconf/frontend=noninteractive <wait>console-setup/ask_detect=false <wait>console-keymaps-at/keymap=us <wait>grub-installer/bootdev=/dev/sda <wait><enter><wait>",
+    "boot_command": " <wait> <wait> <wait> <wait> <wait><wait>set gfxpayload=keep<enter><wait>linux /casper/vmlinuz quiet<wait> autoinstall<wait> ds=nocloud-net<wait>\\;s=http://<wait>{{.HTTPIP}}<wait>:{{.HTTPPort}}/<wait> ---<enter><wait>initrd /casper/initrd<wait><enter><wait>boot<enter><wait>",
     "boot_wait": "5s",
     "box_basename": "Debian-Desktop",
     "build_directory": "build",
@@ -71,22 +71,7 @@
     },
     {
       "type": "virtualbox-iso",
-      "boot_command": [
-        " <wait>",
-        " <wait>",
-        " <wait>",
-        " <wait>",
-        " <wait>",
-        "<esc><wait>",
-        "<f6><wait>",
-        "<esc><wait>",
-        "<bs><bs><bs><bs><wait>",
-        " autoinstall<wait5>",
-        " ds=nocloud-net<wait5>",
-        ";s=http://<wait5>{{.HTTPIP}}<wait5>:{{.HTTPPort}}/<wait5>",
-        " ---<wait5>",
-        "<enter><wait5>"
-      ],
+      "boot_command": "{{ user `boot_command` }}",
       "boot_wait": "{{ user `boot_wait` }}",
       "cpus": "{{ user `cpus` }}",
       "disk_size": "{{ user `disk_size` }}",
