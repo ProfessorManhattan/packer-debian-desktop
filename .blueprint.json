@@ -1,7 +1,9 @@
 {
   "badge_style": "flat",
   "description_template": "Debian Desktop MAJOR_VERSION.MINOR_VERSION",
+  "description_template_package": "An automated Debian Desktop (currently, version MAJOR_VERSION.MINOR_VERSION) Packer project that builds boxes using the latest Debian Server release",
   "hostname": "vagrant-debian",
   "slug": "debian-desktop",
-  "vagrant_tag": "debian"
+  "vagrant_tag": "debian",
+  "version_description": "Compact Debian Desktop ISO_VERSION image. Built from the Debian Live Server ISO_VERSION image using many of the scripts that bento chef uses. See https://gitlab.com/megabyte-labs/packer/debian-desktop for more details."
 }

@@ -25,7 +25,8 @@
     "ssh_timeout": "10000s",
     "ssh_username": "vagrant",
     "vagrantup_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}",
-    "vagrantup_user": "Megabyte"
+    "vagrantup_user": "Megabyte",
+    "version_description": "Compact Debian Desktop 10.9.0 image. Built from the Debian Live Server 10.9.0 image using many of the scripts that bento chef uses. See https://gitlab.com/megabyte-labs/packer/debian-desktop for more details."
   },
   "builders": [
     {
@@ -146,7 +147,7 @@
         "type": "vagrant-cloud",
         "access_token": "{{ user `vagrantup_token` }}",
         "box_tag": "{{ user `vagrantup_user` }}/{{ user `box_basename` }}",
-        "version_description": "{{ user `description` }} version {{ user `iso_version` }}",
+        "version_description": "{{ user `version_description` }}",
         "version": "{{ user `iso_version` }}"
       }
     ]

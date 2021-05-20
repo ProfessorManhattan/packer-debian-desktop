@@ -1,7 +1,7 @@
 {
   "name": "@megabytelabs/packer-debian-desktop",
   "version": "1.0.0",
-  "description": "Node files that aid in development of Packer projects",
+  "description": "An automated Debian Desktop (currently, version 10.9) Packer project that builds boxes using the latest Debian Server release",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "scripts": {
