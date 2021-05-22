@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :debian do |debian|
     debian.vm.box="Megabyte/Debian-Desktop"
     debian.vm.hostname = "vagrant-debian"
-    debian.vm.name = "Debian Desktop 10.9"
+    #debian.vm.name = "Debian Desktop 10.9" TODO: Figure out how to set name globally if possible
     debian.vm.network :forwarded_port, guest: 22, host: 58022, id: "ssh", auto_correct: true
     debian.vm.network :forwarded_port, guest: 3389, host: 53389, id: "rdp", auto_correct: true
     debian.vm.network :forwarded_port, guest: 443, host: 58443, id: "https", auto_correct: true
