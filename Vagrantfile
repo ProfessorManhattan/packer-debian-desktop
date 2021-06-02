@@ -16,7 +16,6 @@ Vagrant.configure("2") do |config|
     debian.vm.network :forwarded_port, guest: 3389, host: 53389, id: "rdp", auto_correct: true
     debian.vm.network :forwarded_port, guest: 443, host: 58443, id: "https", auto_correct: true
     debian.vm.network :forwarded_port, guest: 80, host: 58080, id: "http", auto_correct: true
-    debian.vm.network :private_network, ip: "172.24.24.2", netmask: "255.255.255.0"
 
     debian.vm.provider :hyperv do |v|
       v.cpus = 2
