@@ -1,6 +1,6 @@
 {
   "variables": {
-    "boot_command": " <wait> <wait> <wait> <wait> <wait><wait>set gfxpayload=keep<enter><wait>linux /casper/vmlinuz quiet<wait> autoinstall<wait> ds=nocloud-net<wait>\\;s=http://<wait>{{.HTTPIP}}<wait>:{{.HTTPPort}}/<wait> ---<enter><wait>initrd /casper/initrd<wait><enter><wait>boot<enter><wait>",
+    "boot_command": "<esc> .linux /d-i/vmlinuz<wait> initrd=/d-i/initrd.gz<wait> debconf/priority=critical preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg debian-installer=en_US.UTF-8 auto locale=en_US.UTF-8 kbd-chooser/method=us keyboard-configuration/xkb-keymap=us netcfg/get_hostname=vagrant-debian netcfg/get_domain=vagrantup.com fb=false debconf/frontend=noninteractive console-setup/ask_detect=false console-keymaps-at/keymap=us grub-installer/bootdev=/dev/sda <enter><wait>",
     "boot_wait": "5s",
     "box_basename": "Debian-Desktop",
     "build_directory": "build",
