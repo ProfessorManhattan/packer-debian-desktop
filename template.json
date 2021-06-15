@@ -165,3 +165,4 @@
     "version_description": "Compact Debian Desktop 10.9.0 image. Built from the Debian Live Server 10.9.0 image using many of the scripts that bento chef uses. See https://gitlab.com/megabyte-labs/packer/debian-desktop for more details."
   }
 }
+
