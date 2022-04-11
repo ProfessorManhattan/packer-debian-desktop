@@ -162,6 +162,6 @@
     "ssh_username": "vagrant",
     "vagrantup_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}",
     "vagrantup_user": "Megabyte",
-    "version_description": "Compact Debian Desktop 10.9.0 image. Built from the Debian Live Server 10.9.0 image using many of the scripts that bento chef uses. See https://gitlab.com/megabyte-labs/packer/debian-desktop for more details."
+    "version_description": "Minimal Debian Desktop 10.9.0 image. Built from the Debian Desktop Live 10.9.0 image. See https://github.com/megabyte-labs/packer-debian-desktop for more details."
   }
 }
