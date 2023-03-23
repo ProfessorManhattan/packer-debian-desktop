@@ -61,7 +61,7 @@
   </a>
 </div>
 
-> </br><h4 align="center">**An automated Debian Desktop Packer template (currently, version 10.9) that builds boxes using the latest Debian Desktop Live release**</h4></br>
+> <br/><h4 align="center">**An automated Debian Desktop Packer template (currently, version 10.9) that builds boxes using the latest Debian Desktop Live release**</h4><br/>
 
 <!--TERMINALIZER![terminalizer_title](https://gitlab.com/megabyte-labs/ansible-roles/role_name/-/raw/master/.demo.gif)TERMINALIZER-->
 
